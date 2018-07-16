@@ -3,11 +3,11 @@
 using namespace std;
 
 int main() {
-	//��charָ�����������ַ���
+	//用char指针接收输入的字符串
 	char *word = new char;
 	cin >> word;
 
-	//�ӵ�0λ��ʼ������ǰλ��ֵ���ַ�������str����ǰλΪ��ʱ��˵���ַ����ѽ���
+	//从第0位开始，将当前位的值（字符）存入str，当前位为空时，说明字符串已结束
 	int count = 0;
 	string str = "";
 	while (*word) {
@@ -16,7 +16,7 @@ int main() {
 		word++;
 	}
 
-	cout << "\n��ת���ַ�Ϊ�� " << str << endl;
+	cout << "\n反转后字符为： " << str << endl;
 
 	system("pause");
 	return 0;
